@@ -12,6 +12,9 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'webrat'
+
+
 group :development do
   gem 'rspec-rails'
 end
