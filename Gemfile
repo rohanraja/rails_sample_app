@@ -14,6 +14,7 @@ end
 
 gem 'webrat'
 
+gem 'bootstrap-sass'
 
 group :development do
   gem 'rspec-rails'
