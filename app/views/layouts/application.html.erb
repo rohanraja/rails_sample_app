@@ -14,9 +14,50 @@
   <title>RoR <%= @title  %></title>
   <%= csrf_meta_tag %>
 </head>
-<body>
+  <body>
+    <header class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="./home.html">Sample App</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="./about">Home</a>
+          </li>
+          <li class="">
+            <a href="./about">About Us</a>
+          </li>
+          <li class="">
+            <a href="./contact">Contact</a>
+          </li>
+          <li class="">
 
-<%= yield %>
-
-</body>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </header>
+    <div id="main" role="main">
+      <div class="container">
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+          </footer>
+        </div>
+      </div> <!--! end of .container -->
+    </div> <!--! end of #main -->
+    
+    
+  </body>
 </html>
