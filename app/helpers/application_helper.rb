@@ -16,4 +16,13 @@ module ApplicationHelper
   end
   
   
+  
+  def helprtxt
+  
+  	"This text is generated from application_helper.rb"
+  
+  end
+  
+  
+  
 end
