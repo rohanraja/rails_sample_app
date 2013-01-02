@@ -54,4 +54,12 @@ describe PagesController do
     end
   end
 
+
+  describe "Check my name paragraph" do
+    it "returns my name para" do
+      get 'home'
+      response.should have_selector("p", :content => "My name is Rohan")
+    end
+  end
+
 end
